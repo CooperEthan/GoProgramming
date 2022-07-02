@@ -18,8 +18,15 @@ func main(){
 	fmt.Println(bx)
 
 	x = int(bx)
-	fmt.Println(x)
+	fmt.Printf("%T\t", x)
+	fmt.Println("\t", x)
+	fmt.Printf("%T", bx)
 
+	fmt.Println("====================")
+	bx = ethan(x)
+	fmt.Printf("%T\n", x)
+
+	fmt.Println("==========")
 	z := 50 
 	fmt.Println(z)
 
