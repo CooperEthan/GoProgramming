@@ -9,7 +9,7 @@ var z = "s"
 func main(){
 
 fmt.Println(y)
-fmt.Printf("%T\n",y)
+fmt.Printf("%T\n",z)
 fmt.Println(z)
 
 z= "new s"
