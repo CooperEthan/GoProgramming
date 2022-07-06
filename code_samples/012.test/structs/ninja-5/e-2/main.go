@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-// type house struct{
-// 	size string
-// 	city string
-// }
-
 func main() {
 
 	h := struct{
