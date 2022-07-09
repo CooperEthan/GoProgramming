@@ -22,6 +22,14 @@ func bar(h human) {
 
 type hotdog int
 
+func (s secretAgent) speak() {
+	fmt.Println(s.first, s.last, s.ltk)
+}
+
+func (p person) speak() {
+	fmt.Println(p.first, p.last)
+}
+
 func main() {
 
 	sa1 := secretAgent{
@@ -70,10 +78,4 @@ func main() {
 
 }
 
-func (s secretAgent) speak() {
-	fmt.Println(s.first, s.last, s.ltk)
-}
 
-func (p person) speak() {
-	fmt.Println(p.first, p.last)
-}
