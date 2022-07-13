@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-
 func main() {
 
 	var x int
@@ -34,7 +33,7 @@ func foo() {
 	fmt.Println("hello")
 }
 
-func incrementer() func() int{
+func incrementer() func() int {
 	var z int
 	return func() int {
 		z++

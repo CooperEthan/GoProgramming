@@ -6,22 +6,23 @@ import (
 	"math"
 )
 
-type circle struct{
+type circle struct {
 	r float64
 }
 
-type square struct{
+type square struct {
 	r float64
 }
 
-type shape interface{
-	area()float64
+type shape interface {
+	area() float64
 }
-func (c *circle) area()float64 {
-	return math.Pi*c.r*c.r
+
+func (c *circle) area() float64 {
+	return math.Pi * c.r * c.r
 }
-func (s *square) area()float64 {
-	return s.r*s.r
+func (s *square) area() float64 {
+	return s.r * s.r
 }
 
 func info(s shape) {
@@ -33,12 +34,12 @@ func main() {
 	s := square{
 		r: 5,
 	}
-	c := circle {
+	c := circle{
 		r: 5,
 	}
 	info(&c)
-	fmt.Printf("%T\n",c)
+	fmt.Printf("%T\n", c)
 	info(&s)
-	fmt.Printf("%T\n",s)
+	fmt.Printf("%T\n", s)
 
 }

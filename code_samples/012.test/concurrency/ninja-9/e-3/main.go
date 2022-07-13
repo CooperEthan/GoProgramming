@@ -1,11 +1,9 @@
-// go run -race main.go  --> to check race condition
 package main
 
 import (
 	"fmt"
 	"runtime"
 	"sync"
-	"sync/atomic"
 )
 
 func main() {
@@ -17,29 +15,24 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	// counter := 0
-	var counter int64
+	xincrementer := 0
 	const gs = 100
 	wg.Add(gs)
 
-	// mutex --> to pretend race condition in the code.
-	// var mu sync.Mutex
-
 	for i := 0; i < gs; i++ {
 		go func() {
-			// v := counter
-			//time.Sleep(time.Second)
-			atomic.AddInt64(&counter, 1)
+			v := xincrementer
 			runtime.Gosched()
-			fmt.Println("Counter\t", atomic.LoadInt64(&counter))
-			// v++
-			// counter = v
-			// mu.Unlock()
+			v++
+			xincrementer = v
+			fmt.Println(xincrementer)
 			wg.Done()
 		}()
 		fmt.Println("GoRoutine\t\t", runtime.NumGoroutine())
+
 	}
 	wg.Wait()
+	fmt.Println("end value:", xincrementer)
 	fmt.Println("GoRoutine\t\t", runtime.NumGoroutine())
-	fmt.Println("count:", counter)
+	wg.Done()
 }

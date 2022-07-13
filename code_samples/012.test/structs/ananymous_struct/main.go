@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 // type person struct{
 // 	first string
 // 	last string
@@ -11,14 +10,14 @@ import "fmt"
 
 func main() {
 
-	p1 := struct{
+	p1 := struct {
 		first string
-		last string
-		age int
-	} {
+		last  string
+		age   int
+	}{
 		first: "James",
-		last: "Bond",
-		age: 40,
+		last:  "Bond",
+		age:   40,
 	}
 
 	fmt.Println(p1)

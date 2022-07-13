@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-
-var a int 
+var a int
 
 type hotdog int
 
@@ -11,7 +10,7 @@ var b hotdog
 
 func main() {
 
-	a =42
+	a = 42
 	b = 43
 	fmt.Println(a)
 	fmt.Printf("%T\n", a)
@@ -20,5 +19,5 @@ func main() {
 
 	//conversion
 	a = int(b)
-	fmt.Println(a) 
+	fmt.Println(a)
 }

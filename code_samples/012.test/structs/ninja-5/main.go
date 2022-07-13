@@ -5,16 +5,16 @@ import (
 )
 
 type person struct {
-	first string
-	last string
+	first            string
+	last             string
 	ice_cream_flavor []string
 }
 
 func main() {
 
-	p1 := person {
+	p1 := person{
 		first: "James",
-		last: "Bond",
+		last:  "Bond",
 		ice_cream_flavor: []string{
 			"dark",
 			"pink",
@@ -22,9 +22,9 @@ func main() {
 		},
 	}
 
-	p2 := person {
+	p2 := person{
 		first: "Matt",
-		last: "Damon",
+		last:  "Damon",
 		ice_cream_flavor: []string{
 			"white",
 			"black",
@@ -32,17 +32,17 @@ func main() {
 		},
 	}
 
-	m := map[string]person {
-		p1.last:p1,
-		p2.last:p2,
+	m := map[string]person{
+		p1.last: p1,
+		p2.last: p2,
 	}
 
-	for i,v := range m {
+	for i, v := range m {
 		fmt.Println(i)
 		fmt.Println(v.first)
 		fmt.Println(v.last)
-		for j,k := range v.ice_cream_flavor {
-			fmt.Println(j,k)
+		for j, k := range v.ice_cream_flavor {
+			fmt.Println(j, k)
 		}
 		fmt.Println("=======")
 	}

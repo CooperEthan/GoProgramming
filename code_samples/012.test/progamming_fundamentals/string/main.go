@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-
-
 func main() {
 	s := "Hello Playground"
 	fmt.Println(s)
@@ -12,12 +10,12 @@ func main() {
 	World"`
 	fmt.Println(k)
 
-	bs  := []byte(s)
+	bs := []byte(s)
 	fmt.Println(bs)
 	fmt.Printf("%T\t", bs)
 
-	for i := 0; i<len(s); i++ {
-		fmt.Printf("%#U ",s[i])
+	for i := 0; i < len(s); i++ {
+		fmt.Printf("%#U ", s[i])
 	}
 
 	fmt.Println("\n ")

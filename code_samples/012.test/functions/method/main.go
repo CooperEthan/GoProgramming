@@ -2,10 +2,9 @@ package main
 
 import "fmt"
 
-
 type person struct {
 	first string
-	last string
+	last  string
 }
 type secretAgent struct {
 	person
@@ -13,23 +12,23 @@ type secretAgent struct {
 }
 
 func (s secretAgent) speak() {
-	fmt.Println(s.first,s.last,s.ltk,s.person)
+	fmt.Println(s.first, s.last, s.ltk, s.person)
 }
 
 func main() {
 
-	sa1 := secretAgent {
+	sa1 := secretAgent{
 		person: person{
 			first: "James",
-			last: "Bond",
+			last:  "Bond",
 		},
 		ltk: true,
 	}
 	fmt.Println(sa1)
-	sa2 := secretAgent {
+	sa2 := secretAgent{
 		person: person{
 			first: "James",
-			last: "Bond",
+			last:  "Bond",
 		},
 		ltk: true,
 	}
