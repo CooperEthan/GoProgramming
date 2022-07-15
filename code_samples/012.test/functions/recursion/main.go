@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-
 func main() {
 	n := factorial(4)
 	fmt.Println(n)
@@ -14,15 +13,15 @@ func main() {
 }
 
 func factorial(n int) int {
-	if n  == 0 {
+	if n == 0 {
 		return 1
 	}
 	return n * factorial(n-1)
 }
 
-func loop(n int) int{
+func loop(n int) int {
 	a := 1
-	for ; n>0; n-- {
+	for ; n > 0; n-- {
 		a *= n
 	}
 	return a

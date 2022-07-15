@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-
-
 const (
 	a = iota
 	b = iota
@@ -15,11 +13,11 @@ const (
 
 const (
 	d = iota
-	e 
-	f 
+	e
+	f
 )
 
-func main () {
+func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)

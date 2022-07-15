@@ -5,11 +5,10 @@ import (
 	"runtime"
 )
 
-
 var x int
 var y float64
 
-func main(){
+func main() {
 
 	x = 42
 	y = 42.9

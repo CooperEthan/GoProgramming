@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-type person struct{
+type person struct {
 	name string
 }
+
 func changeMe(p *person) {
 	p.name = "MisMoneypenny"
 	(*p).name = "James Bond"
@@ -14,11 +15,11 @@ func changeMe(p *person) {
 func main() {
 
 	a := 42
-	fmt.Println("value is=",a)
-	fmt.Println("Adress of the value=",&a)
+	fmt.Println("value is=", a)
+	fmt.Println("Adress of the value=", &a)
 	fmt.Println("====================")
 
-	p1 := person {
+	p1 := person{
 		name: "James Bond",
 	}
 	changeMe(&p1)

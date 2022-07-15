@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-
-var y string 
+var y string
 var x int
 
-func main(){
+func main() {
 
 	y = "I am Yakut"
 

@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-const a  = 42
+const a = 42
 const b = 42.354
 const c = "James Bond"
 
-const  (
+const (
 	d = 42
 	e = 42345
 	f = "James Bond"

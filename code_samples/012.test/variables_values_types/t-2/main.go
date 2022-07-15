@@ -2,23 +2,22 @@ package main
 
 import "fmt"
 
-
 var t = 5
 
 var k int
 
-func main () {
+func main() {
 
 	x := 42
 	fmt.Println(x)
-	x=99
+	x = 99
 	fmt.Println(x)
-	y := x+42
+	y := x + 42
 	fmt.Println(y)
 
-	cards := []string{"white","red","blue"}
+	cards := []string{"white", "red", "blue"}
 
-	for _, s := range  cards { 
+	for _, s := range cards {
 		fmt.Println(s, "hi")
 	}
 
@@ -28,7 +27,7 @@ func main () {
 
 }
 
-func foo(){
+func foo() {
 	fmt.Println("last t", t)
 	k = 5
 	fmt.Println(k)
