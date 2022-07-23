@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-
-func main () {
+func main() {
 
 	// x := 83 / 40
 	// y := 83 % 40
@@ -12,14 +11,13 @@ func main () {
 	x := 0
 	for {
 		x++
-		if x >10 {
+		if x > 10 {
 			break
 		}
-		if x%2 != 0{
+		if x%2 != 0 {
 			continue
 		}
 		fmt.Println(x)
 	}
-
 
 }

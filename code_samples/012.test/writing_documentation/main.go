@@ -6,16 +6,16 @@ import (
 	"example.com/v2/writing_documentation/dog"
 )
 
-type canine struct{
+type canine struct {
 	name string
-	age int
+	age  int
 }
 
 func main() {
 
 	fido := canine{
 		name: "Fido",
-		age: dog.Years(10),
+		age:  dog.Years(10),
 	}
 	fmt.Println(fido)
 

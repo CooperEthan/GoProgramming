@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var x int =42
+var x int = 42
 var y string = "James Bond"
 var z bool = true
 
@@ -10,9 +10,10 @@ var t int
 var v string
 
 type ethan int
+
 var bx ethan
 
-func main(){
+func main() {
 
 	bx = 100
 	fmt.Println(bx)
@@ -27,7 +28,7 @@ func main(){
 	fmt.Printf("%T\n", x)
 
 	fmt.Println("==========")
-	z := 50 
+	z := 50
 	fmt.Println(z)
 
 	fmt.Println(x, y, z)
@@ -41,6 +42,6 @@ func main(){
 	fmt.Println(v)
 
 	fmt.Println("===================")
-	s := fmt.Sprintf("%v\t%v\t%v\t",x,y,z)
+	s := fmt.Sprintf("%v\t%v\t%v\t", x, y, z)
 	fmt.Println(s)
 }

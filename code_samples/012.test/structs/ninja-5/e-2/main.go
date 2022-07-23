@@ -4,39 +4,38 @@ import "fmt"
 
 func main() {
 
-	h := struct{
+	h := struct {
 		size string
 		city string
 	}{
 		size: "single family house",
-		city : "Chicago",
+		city: "Chicago",
 	}
 	fmt.Println(h)
 
-	m := struct{
-		first string
-		friends map[string]int
+	m := struct {
+		first     string
+		friends   map[string]int
 		favDrinks []string
 	}{
 		first: "Kevin",
 		friends: map[string]int{
-			"Adam": 40,
+			"Adam":    40,
 			"Lambert": 30,
 		},
-		favDrinks: []string {
+		favDrinks: []string{
 			"Martini",
 			"Vodka",
 		},
-
 	}
 
 	fmt.Println(m)
 
-	for i,v := range m.friends{
-		fmt.Println(i,v)
+	for i, v := range m.friends {
+		fmt.Println(i, v)
 	}
-	for i,v := range m.favDrinks {
-		fmt.Println(i,v)
+	for i, v := range m.favDrinks {
+		fmt.Println(i, v)
 	}
 
 }

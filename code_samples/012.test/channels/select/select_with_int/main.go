@@ -47,8 +47,6 @@ func receive(even, odd, quit <-chan int) {
 	}
 }
 
-
-
 // package main
 
 // import "fmt"

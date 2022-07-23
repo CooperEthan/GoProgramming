@@ -7,27 +7,26 @@ type vehicle struct {
 	color string
 }
 type truck struct {
-	vehicle 
+	vehicle
 	fourwheel bool
 }
-type sedan struct{
+type sedan struct {
 	vehicle
 	luxury bool
 }
 
-
 func main() {
 
-	t := truck {
+	t := truck{
 		vehicle: vehicle{
-			doors : 5,
+			doors: 5,
 			color: "blue",
 		},
 		fourwheel: true,
 	}
 	// fmt.Println(t)
 
-	s := sedan {
+	s := sedan{
 		vehicle: vehicle{
 			doors: 4,
 			color: "black",

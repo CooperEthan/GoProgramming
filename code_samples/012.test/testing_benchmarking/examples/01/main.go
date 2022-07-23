@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(acdc.Sum(1,2,3,4,5))
-	fmt.Println(acdc.Sum(21,21))
+	fmt.Println(acdc.Sum(1, 2, 3, 4, 5))
+	fmt.Println(acdc.Sum(21, 21))
 }

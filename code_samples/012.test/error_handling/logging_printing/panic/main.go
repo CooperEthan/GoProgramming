@@ -7,7 +7,7 @@ import (
 
 func main() {
 	f, err := os.Open("no-file.txt")
-	if err != nil{
+	if err != nil {
 		log.Panic(err)
 		// panic(err)
 	}

@@ -13,7 +13,7 @@ type person struct {
 
 func main() {
 	s := `[{"First":"James","Age":20},{"First":"Bond","Age":25}]`
-	bs := []byte(s)	
+	bs := []byte(s)
 
 	var people []person
 
@@ -22,9 +22,9 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(people)
-	for i,v := range people {
-		fmt.Println("\nPERSON NUMBER",i)
-		fmt.Println(v.First,v.Age)
+	for i, v := range people {
+		fmt.Println("\nPERSON NUMBER", i)
+		fmt.Println(v.First, v.Age)
 	}
 
 	fmt.Println("=========================")

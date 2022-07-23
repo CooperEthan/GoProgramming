@@ -13,9 +13,9 @@ func main() {
 
 	wg.Add(2)
 	go func() {
-		for i :=0; i<4; i++{
-		fmt.Println("I am first function",i)
-		// wg.Wait()
+		for i := 0; i < 4; i++ {
+			fmt.Println("I am first function", i)
+			// wg.Wait()
 		}
 		wg.Done()
 	}()
@@ -25,6 +25,6 @@ func main() {
 		fmt.Println("I am second function")
 		wg.Done()
 	}()
-	 fmt.Println("GoRoutine\t\t", runtime.NumGoroutine())
-	 wg.Wait()
+	fmt.Println("GoRoutine\t\t", runtime.NumGoroutine())
+	wg.Wait()
 }

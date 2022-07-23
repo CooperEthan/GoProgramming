@@ -17,7 +17,7 @@ func main() {
 
 	f2, err := os.Open("no-file.txt")
 	if err != nil {
-		log.Println("Error happened: ",err)
+		log.Println("Error happened: ", err)
 	}
 	defer f2.Close()
 
