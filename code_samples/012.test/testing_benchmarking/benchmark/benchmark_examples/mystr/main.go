@@ -7,7 +7,7 @@ func Cat(xs []string) string {
 	for _, v := range xs[1:] {
 		s += " "
 		s += v
-		
+
 	}
 	return s
 }
