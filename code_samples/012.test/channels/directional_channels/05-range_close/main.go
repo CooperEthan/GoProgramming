@@ -10,18 +10,17 @@ func main() {
 
 	// send
 	// go foo(c)
-	go func ()  {
+	go func() {
 		for i := 0; i < 10; i++ {
 			c <- i
 		}
 		close(c)
 	}()
-	
+
 	// recieve
 	for v := range c {
 		fmt.Println(v)
 	}
-	
 
 	fmt.Println("about to exit")
 }

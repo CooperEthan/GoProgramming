@@ -2,13 +2,12 @@ package main
 
 import "fmt"
 
-
 func main() {
-	func ()  {
+	func() {
 		x := 5
-		fmt.Println(x)	
+		fmt.Println(x)
 	}()
-	
+
 	f := foo()
 	g := foo()
 	fmt.Println(f())
@@ -20,9 +19,9 @@ func main() {
 	fmt.Println(g())
 }
 
-func foo() func ()int{
+func foo() func() int {
 	x := 0
-	return func ()int  {
+	return func() int {
 		x++
 		return x
 	}

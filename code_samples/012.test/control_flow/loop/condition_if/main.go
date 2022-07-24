@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-
-func main () {
+func main() {
 	if true {
 		fmt.Println("001")
 	}
@@ -31,10 +30,10 @@ func main () {
 	if !(2 != 2) {
 		fmt.Println("007")
 	}
-//=================================
+	//=================================
 	if x := 42; x == 42 {
 		fmt.Println("Hello")
-	} else{
-	fmt.Println("here is the statement")
+	} else {
+		fmt.Println("here is the statement")
 	}
 }

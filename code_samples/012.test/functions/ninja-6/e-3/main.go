@@ -4,21 +4,21 @@ import "fmt"
 
 type person struct {
 	first string
-	last string
-	age int
+	last  string
+	age   int
 }
 
 func main() {
 
-	p := person {
+	p := person{
 		first: "James",
-		last: "Bond",
-		age: 20,
+		last:  "Bond",
+		age:   20,
 	}
 	p.speak()
 
 }
 
 func (p person) speak() {
-	fmt.Println("I am",p.first,p.last," and I am ",p.age, " years old.")
+	fmt.Println("I am", p.first, p.last, " and I am ", p.age, " years old.")
 }

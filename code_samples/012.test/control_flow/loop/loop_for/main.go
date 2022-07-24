@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-
-
 func main() {
 	x := 1
 
@@ -17,11 +15,11 @@ func main() {
 
 	for {
 		if x > 9 {
-		break
+			break
+		}
+		fmt.Println(x)
+		x++
 	}
-	fmt.Println(x)
-	x++ }
 	fmt.Println("done")
-
 
 }

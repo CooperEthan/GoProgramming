@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 // const (
 // 	a = 42
 // 	b int = 42
@@ -11,9 +10,9 @@ import "fmt"
 
 const (
 	a = 2018 + iota
-	b =2018 + iota
+	b = 2018 + iota
 	c = 2018 + iota
-	d = 2018 +iota
+	d = 2018 + iota
 )
 
 func main() {

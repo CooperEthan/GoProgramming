@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func main() {
 
 	var x [5]int
@@ -15,15 +14,15 @@ func main() {
 
 	for i, xi := range x {
 		fmt.Println(i, xi)
-	} 
+	}
 	// =============================================
 
-	y := [] int{42,43,44,45,46,47,48,49,50,51}
+	y := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
 	fmt.Println(y[:5])
 	fmt.Println(y[5:])
 	fmt.Println(y[2:7])
 	fmt.Println(y[1:6])
-	
+
 	//==============================================
 
 }

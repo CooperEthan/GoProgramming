@@ -1,0 +1,19 @@
+** go get -u github.com/golang/lint/golint 
+
+** go vet ./...
+
+** go fmt ./...
+
+** golint ./...
+
+** go test --cover
+
+** go test -bench .  // for benchmarking
+
+** go test -cover // show how much test covered
+
+** go tool cover -h // help about more about cover
+
+** go test -coverprofile c.out // creates c.out file
+
+** go tool cover -html=c.out // visual of whats covered and not in the browser
