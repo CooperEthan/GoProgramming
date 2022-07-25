@@ -3,6 +3,7 @@ module example.com/v2
 go 1.18
 
 require (
+	github.com/GoesToEleven/go-programming v0.0.0-20181228215051-5519dbb87bc5
 	github.com/yuin/goldmark v1.4.1 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect

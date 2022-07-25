@@ -13,6 +13,6 @@ TestCat(t *testing.T)
 go test
 go test -bench .
 go test -cover 
-go test coverprofile c.out
-go tool cover -html=c.out
+go test -coverprofile c.out
+** go tool cover -html=c.out // visual of whats covered and not in the browser
 
